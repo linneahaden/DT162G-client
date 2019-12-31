@@ -33,7 +33,6 @@ class App extends Component {
   async componentDidMount() {
     const data = await getPosts();
     console.log(data);
-    // Importera och skapa en komponent för varje rad av posts (row)
     this.setState({posts : data});
   }
 
@@ -42,7 +41,6 @@ class App extends Component {
   render() {
       // console.log(this.state.posts);
     return (
-      // className istället för class i markupen.
       <div className="App">
         <header className="App-header">
         {/*Inkluderar komponenten List och skickar state-innehållet som props till List.*/}
@@ -50,7 +48,6 @@ class App extends Component {
         </header>
         {/* TUTORIALGREJS NEDAN
         <Todos todos = {this.state.todos}/>*/}
-
       </div>
     );
   }
