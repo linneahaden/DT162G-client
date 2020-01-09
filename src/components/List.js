@@ -1,19 +1,29 @@
 import React, {Component} from 'react';
+import ListItem from './ListItem';
 
 class List extends Component {
+
   render() {
-    console.log(this.props.posts);
      //Om this.props.posts är laddat, mappa innehållet, annars visa reserv-vy.
     if(this.props.posts) {
+
       return(
-        this.props.posts.map((row)=> (
-        <h3>{row.title}</h3>
+        // Pappar innehållet i posts där varje post är singlePost
+        this.props.posts.map((singlePost)=> (
+        //Inkluderar ListItem och skickar singlePost som en prop till ListItem
+        //Key måste vara något unikt
+        <ListItem
+          key={singlePost._id}
+          singlePost={singlePost}
+          voteUp = {this.props.voteUp}
+        />
         )
-    ));
+      )
+  );
     } else {
       return (
         <div>
-            <h2>Arrayen är tom</h2>
+            <h2>Ingen data laddad</h2>
         </div>
       );
     }

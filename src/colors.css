@@ -1,0 +1,62 @@
+/* Color Theme Swatches in Hex */
+.Havet-1-hex {
+  color: #1D1C26;
+}
+
+.Havet-2-hex {
+  color: #3C4359;
+}
+
+.Havet-3-hex {
+  color: #616F8C;
+}
+
+.Havet-4-hex {
+  color: #808CA6;
+}
+
+.Havet-5-hex {
+  color: #B4C0D9;
+}
+
+/* Color Theme Swatches in RGBA */
+.Havet-1-rgba {
+  color: rgba(29, 28, 38, 1);
+}
+
+.Havet-2-rgba {
+  color: rgba(60, 67, 89, 1);
+}
+
+.Havet-3-rgba {
+  color: rgba(97, 111, 140, 1);
+}
+
+.Havet-4-rgba {
+  color: rgba(128, 140, 166, 1);
+}
+
+.Havet-5-rgba {
+  color: rgba(180, 192, 217, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.Havet-1-hsla {
+  color: hsla(245, 15, 12, 1);
+}
+
+.Havet-2-hsla {
+  color: hsla(225, 19, 29, 1);
+}
+
+.Havet-3-hsla {
+  color: hsla(220, 18, 46, 1);
+}
+
+.Havet-4-hsla {
+  color: hsla(221, 17, 57, 1);
+}
+
+.Havet-5-hsla {
+  color: hsla(220, 32, 77, 1);
+}
