@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ListItem from './ListItem';
 
+
 class List extends Component {
 
   render() {
@@ -15,7 +16,6 @@ class List extends Component {
         <ListItem
           key={singlePost._id}
           singlePost={singlePost}
-          voteUp = {this.props.voteUp}
         />
         )
       )

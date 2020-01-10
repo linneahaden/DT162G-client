@@ -24,8 +24,6 @@ function voteUpRequest(_id) {
 
   return axios
     .put(url + 'posts/' + _id, body)
-   //  .then(r => console.log(r.status))
-   // .catch(e => console.log(e));
     .then(function (response) {
       // handle success
       const post = response.data;
@@ -37,4 +35,21 @@ function voteUpRequest(_id) {
     })
 }
 
-module.exports = {getPosts, voteUpRequest};
+// Put call for downvote
+function voteDownRequest(_id) {
+  const body = {"votesDown" : true}
+
+  return axios
+    .put(url + 'posts/' + _id, body)
+    .then(function (response) {
+      // handle success
+      const post = response.data;
+      return post;
+    })
+    .catch(function (error) {
+      console.log(error);
+      throw error;
+    })
+}
+
+module.exports = {getPosts, voteUpRequest, voteDownRequest};
