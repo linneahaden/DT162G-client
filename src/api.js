@@ -1,7 +1,10 @@
 const axios = require('axios');
 
 // URL localhost
-let url = 'http://localhost:4000/';
+// let url = 'http://localhost:4000/';
+
+// URL remote api
+let url = 'https://dt162g-server.herokuapp.com/';
 
 //************************************
 //Get all posts
