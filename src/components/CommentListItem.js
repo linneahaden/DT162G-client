@@ -28,8 +28,6 @@ class CommentListItem extends Component {
       const submitData =  {
          "content": this.state.comment
       }
-      //updateCommentRequest(this.props.match.params.id, this.props._id, submitData);
-      //updateCommentRequest('5e408697fe64043b0c006de5', '5e47ec78934f1433bc6f1c7e', submitData);
       updateCommentRequest(this.props.postId, this.props.comment._id, submitData);
     }
     this.setState({comment: ''});
