@@ -70,8 +70,6 @@ class App extends Component {
     return (
 
       <div className="App">
-
-        <Router basename="/dev/dt162g">
           <Header />
           <Switch>
 
