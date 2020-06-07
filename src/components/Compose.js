@@ -17,6 +17,7 @@ class Compose extends Component {
     this.handleNewPostSubmit = this.handleNewPostSubmit.bind(this);
   }
 
+  // Hanterar form input
   handleInputChange(event) {
   const target = event.target;
   const value = target.value;

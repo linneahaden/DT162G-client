@@ -93,7 +93,6 @@ class App extends Component {
                 categories = {this.state.categories}
               />
             }>
-
             </Route>
 
             <Route exact path="/compose">

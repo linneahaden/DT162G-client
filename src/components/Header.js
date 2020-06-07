@@ -17,7 +17,7 @@ class Header extends Component {
         <header className="App-header">
           <nav>
             <div className="logo">
-              <h3><NavLink exact activeClassName="active" to="/">Logga</NavLink></h3>
+              <h2><NavLink exact activeClassName="active" to="/">'amen KOLLA!</NavLink></h2>
             </div>
                 <ul className={
                   //Vid state === true läggs navActive till i klassen.

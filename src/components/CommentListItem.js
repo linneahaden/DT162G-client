@@ -40,12 +40,6 @@ class CommentListItem extends Component {
     window.location.reload(true);
   }
 
-  // handleCommentSubmit(event){
-  //   event.preventDefault();
-  //   const submitData =  {"content": this.state.comment}
-  //   console.log(this.props.comment._id, this.props.postId, submitData);
-  // }
-
   toggleUpdateForm = () => {
     console.log('update comment');
     this.setState({changePostFormVisibility: !this.state.changePostFormVisibility});
